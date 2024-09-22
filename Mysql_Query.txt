@@ -1,0 +1,23 @@
+create table Empl(
+	empno int ,
+	ename varchar(255),
+    job varchar(255),
+    mgr int,
+    hiredate date,
+    sal double,
+    comm double,
+    deptno int,
+    primary key (empno)
+)
+
+select ename, sal from Empl where sal >=2200
+
+select * from Empl where comm is null
+
+select ename, sal from Empl where not between 2500 and 4000
+
+select ename, job, sal where mgr is null
+
+select ename from Empl where ename like '__A%'
+
+select ename from Empl where ename like '%T'
